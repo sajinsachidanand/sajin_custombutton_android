@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="tegApp">
+    <head>
+        
+        <title>TEG::</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        
+        <!-- Bootstrap and jquery-->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+        <script src="lib/jquery/jquery-1.11.3.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Angular-->
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="lib/app.js"></script>
+    
+    </head>
+<body ng-controller = "mainController">
+    
+    <div class="container">
+    <div class="row">
+        <form role="form">
+            <div class="col-lg-6">
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  show!!!
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+          
+     <div id="workflowPart">
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Workflow Instruction</label>
+        </div>
+          <text-button-input></text-button-input>
+          <div ng-include="templateURL"></div>
+        </div>
+          
+      <div id="checklistPart">
+          <div class="checkbox">
+          <label><input type="checkbox" value="">Checklist Instruction</label>
+          </div>
+          <text-button-input></text-button-input>
+        
+      </div>
+          
+      <div id ="attachment">
+          <label>Attachments</label>
+          <text-two-button-input></text-two-button-input> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+ </div>
+</form>
+
+</div>
+        </div>
+<body>
+</html>
